@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>for the better me</title>
+    <meta name="description" content="반응형 웹페이지" />
+    <meta name="keywords" content="HTML, JAVASCRIPT, CSS" />
+    <meta name="author" content="JAEIN" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- Open Graph (facebook, linkedin) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JAEIN 사이트입니다." />
+    <meta property="og:description" content="반응형 웹페이지 제작중입니다." />
+    <meta property="og:image" content="img/zzang.png" />
+    <meta property="og:url" content="https://www.naver.com" />
+    <meta property="og:site_name" content="JAEIN" />
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary" />
+    <!-- card 종류: summary, photo, player -->
+    <meta name="twitter:title" content="JAEIN 사이트입니다." />
+    <meta name="twitter:description" content="반응형 웹페이지 제작중입니다." />
+    <meta name="twitter:image" content="img/zzang.png" />
+    <meta name="twitter:url" content="https://www.naver.com" />
+    <meta name="twitter:creator" content="JAEIN" />
+
+    <!-- favicon -->
+    <link rel="icon" href="img/zzang.png" />
+    <!-- 아이폰 fabicon -->
+    <link rel="apple-touch-icon" href="img/zzang.png" />
+    <!-- IE fabicon -->
+    <link rel="short icon" type="image/x-icon" href="img/zzang.png" />
+
+    <!-- CSS Reset -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f1def33959.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- spoqa ha sans neo -->
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <script src="js/main.js"> </script> -->
+    <!-- CSS 작명 규칙 BEM: block element modifier 
+        - : 단어와 단어 사이 (예: head-container-blue)
+        __ : ~ 의 하위 요소 (예: head-container__head-brand)
+        -- : ~ 의 상태를 나타낼 때 (예: head-container__head-brand--red, --nolink)
+    -->
+    <header>
+      <div class="inner">
+        <div class="head-container">
+          <div class="head-brand">
+            <a href="https://www.naver.com">JAEIN</a>
+          </div>
+          <div class="head-blog">
+            <a href="https://www.naver.com">JAEIN BLOG</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 이미지 섹션 -->
+    <section class="main">
+      <div class="main-container">
+        <div class="inner">
+          <div class="title-container">
+            <div class="title">강의에 집중합니다</div>
+            <div class="message">
+              공부 중입니다.<br />
+              테스트 중입니다.<br />
+              새롭게 다시 시작합니다.<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="inner">
+        <div class="skill-container">
+          <div class="skill">
+            <i class="fab fa-python skill-icon python-style"></i>
+            <div class="skill-title">
+              <div class="skill-name">업무 자동화</div>
+              <div class="skill-usage">크롤링/자동매매</div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="far fa-chart-bar skill-icon analysis-style"></i>
+            <div class="skill-title">
+              <div class="skill-name">데이터 분석</div>
+              <div class="skill-usage">데이터 분석/SQL</div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-app-store skill-icon ai-style"></i>
+            <div class="skill-title">
+              <div class="skill-name">AI</div>
+              <div class="skill-usage">인공지는 활용</div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-vuejs skill-icon vue-style"></i>
+            <div class="skill-title">
+              <div class="skill-name">풀스택</div>
+              <div class="skill-usage">웹/앱 서비스</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="inner">
+        <div class="roadmap-container">
+          <div class="roadmap-title-container">
+            <div class="roadmap-title">Jaein Blog and Book</div>
+            <div class="arrow-container">
+              <i class="slide-prev fas fa-chevron-circle-left"></i>
+              <i class="slide-next fas fa-chevron-circle-right"></i>
+            </div>
+          </div>
+          <div class="class-list-container">
+            <ul class="class-list">
+              <li class="class-card">
+                <img
+                  src="img/cafe_tree.jpg"
+                  alt="cafe tree"
+                  class="class-image"
+                />
+                <div class="class-container">
+                  <div class="class-skill">
+                    <div class="class-type">학습방법</div>
+                    <div class="class-format">블로그</div>
+                  </div>
+                  <div class="class-desc">
+                    <div class="class-title"></div>
+                    <div class="class-detail"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
