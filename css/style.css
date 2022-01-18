@@ -37,6 +37,7 @@ a:hover {
   height: 100%;
   margin: 0 auto;
   padding: 0 2rem;
+  overflow: hidden;
 }
 
 header {
@@ -124,6 +125,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .skill {
@@ -135,6 +137,11 @@ section {
   padding: 0.5rem 1rem;
   margin: 0 1rem;
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+  transition: 0.4s;
+}
+
+.skill:hover {
+  transform: translate(0, -5px);
 }
 
 .skill-icon {
@@ -212,6 +219,9 @@ section {
 .class-list {
   display: flex;
   list-style: none;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  overflow: hidden;
 }
 
 .class-card {
@@ -219,12 +229,19 @@ section {
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
   border-radius: 8px;
   margin: 0 10px;
+  transition: 0.4s;
+  flex-shrink: 0;
+}
+
+.class-card:hover {
+  box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+  transform: translate(0, -5px);
 }
 
 .class-image {
-  width: 100%;
+  max-width: 240px;
   border-radius: 8px 8px 0 0;
-  height: 150px;
+  /* height: 150px; */
 }
 
 .class-container {
@@ -250,6 +267,54 @@ section {
   background-color: #0d47a1;
 }
 
+.class-desc {
+  width: 100%;
+  margin-top: 0.2rem;
+}
+
+.class-title {
+  font-weight: bold;
+  color: #545e6f;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+
+.class-detail {
+  font-size: 0.9rem;
+  color: #545e6f;
+  line-height: 1.5rem;
+}
+
+li a:hover {
+  cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid #e4e4e4;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  /* margin: 1rem 0; */
+}
+
+.footer-message {
+  color: #545e6f;
+  font-weight: bold;
+  margin: 0.3rem 0.5rem;
+}
+
+.footer-contact {
+  color: #545e6f;
+  margin: 1rem 0.5rem;
+}
+
+.footer-copyright {
+  color: #545e6f;
+  margin: 1rem 0.5rem;
+}
+
 @media only screen and (min-width: 1200px) {
   .inner {
     max-width: 1200px;
@@ -258,6 +323,10 @@ section {
 
 @media only screen and (max-width: 980px) {
   .skill-container {
+    display: none;
+  }
+
+  .roadmap-desc {
     display: none;
   }
 }
